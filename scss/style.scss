@@ -1,0 +1,17 @@
+$breakpointA: 1410px;
+$breakpointB: 1199px;
+$breakpointC: 797px;
+
+@import "_reset";
+@import "_main";
+@import "_modal";
+
+body {
+  font-family: "Manrope", sans-serif;
+}
+
+.wrapper {
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 1.6;
+}

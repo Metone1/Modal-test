@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>modal-test</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Manrope:wght@200..800&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="./css/style.css" />
+  </head>
+  <body>
+    <div class="wrapper">
+      <main class="main__container _container">
+        <div class="main__modal modal">
+          <button class="modal__btn">
+            <img src="./media/close.svg" alt="close" />
+          </button>
+          <h2 class="modal__title">Войти в систему</h2>
+          <input class="login" type="text" placeholder="Email/Телефон" />
+          <input class="password" type="number" placeholder="Пароль" />
+          <div class="modal__checkbox">
+            <input type="checkbox" id="checkbox" class="custom-checkbox" />
+            <label for="checkbox"></label>
+            <p>Запомнить пароль</p>
+          </div>
+          <p class="modal__recovery">Восстановить</p>
+          <button class="modal__enter">Войти</button>
+          <button class="modal__register">Зарегестрироваться</button>
+        </div>
+        <div class="main__info">
+          <h1 class="info__title">Демо-версия</h1>
+          <div class="info__subtitle">
+            За 18 лет деятельности было реализовано более 500 крупных, а так же,
+            не менее 2500 средних и малых проектов. Используя знания и
+            накопленный опыт мы можем предложить
+          </div>
+          <button class="info__btn">
+            <p>Попробовать бесплатно</p>
+            <div class="info__btn-img">
+              <img src="./media/arrow.svg" alt="arrow" />
+            </div>
+          </button>
+        </div>
+        <div class="main__img">
+          <div class="img"></div>
+        </div>
+      </main>
+    </div>
+    <script src="./js/script.js"></script>
+  </body>
+</html>

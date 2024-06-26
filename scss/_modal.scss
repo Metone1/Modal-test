@@ -1,0 +1,146 @@
+.main__modal {
+  display: none;
+  position: absolute;
+  left: calc(50% - 15.625rem);
+  top: calc(50% - 17.8125rem);
+  width: 31.25rem;
+  height: 35.9375rem;
+  background-color: #f0f4fc;
+  padding: 1.5rem;
+  flex-direction: column;
+  align-items: stretch;
+  row-gap: 0.25rem;
+
+  &.active {
+    display: flex;
+  }
+
+  @media (max-width: $breakpointB) {
+    width: 27rem;
+    height: 32rem;
+    left: calc(50% - 27rem / 2);
+    top: calc(50% - 32rem / 2);
+  }
+  @media (max-width: $breakpointC) {
+    width: 20rem;
+    height: 28rem;
+    left: calc(50% - 20rem / 2);
+    top: calc(50% - 28rem / 2);
+  }
+
+  .modal__btn {
+    border: none;
+    width: 3.25rem;
+    height: 3.25rem;
+    background-color: #ffffff;
+    border-radius: 0.625rem;
+    cursor: pointer;
+    align-self: end;
+
+    img {
+      width: 1.5rem;
+      height: 1.5rem;
+    }
+  }
+
+  .modal__title {
+    font-size: 1.25rem;
+    font-weight: 500;
+    margin: 0 0 1.125rem 0;
+
+    @media (max-width: $breakpointC) {
+      font-size: 1rem;
+    }
+  }
+
+  input[type="text"],
+  input[type="number"] {
+    border: none;
+    width: 100%;
+    height: 4.5625rem;
+    background-color: #d7e2f6;
+    border-radius: 0.625rem;
+    padding: 0 1.5rem;
+    color: #1f4284;
+    font-size: 1.125rem;
+    font-weight: 500;
+
+    @media (max-width: $breakpointC) {
+      font-size: 1rem;
+    }
+  }
+
+  input::placeholder {
+    color: #1f4284;
+  }
+
+  .modal__checkbox {
+    margin: 1.25rem 0;
+    display: flex;
+    column-gap: 0.875rem;
+    font-size: 1.125rem;
+    position: relative;
+
+    input[type="checkbox"] {
+      width: 1.75rem;
+      height: 1.75rem;
+      position: absolute;
+      z-index: -1;
+      opacity: 0;
+    }
+
+    .custom-checkbox + label {
+      display: inline-flex;
+      align-items: center;
+      user-select: none;
+    }
+    .custom-checkbox + label::before {
+      content: "";
+      display: inline-block;
+      width: 1.125rem;
+      height: 1.125rem;
+      border: 0.125rem solid black;
+      border-radius: 0.1875rem;
+      cursor: pointer;
+    }
+
+    .custom-checkbox:checked + label::before {
+      background-color: #244c98;
+    }
+  }
+
+  .modal__recovery {
+    font-size: 1.25rem;
+    font-weight: 500;
+    color: #244c98;
+    margin-bottom: 2rem;
+    cursor: pointer;
+
+    @media (max-width: $breakpointC) {
+      font-size: 1rem;
+    }
+  }
+  .modal__enter,
+  .modal__register {
+    height: 3.5rem;
+    border: none;
+    border-radius: 0.25rem;
+    font-size: 1.125rem;
+    font-weight: 500;
+    cursor: pointer;
+
+    @media (max-width: $breakpointC) {
+      font-size: 1rem;
+    }
+  }
+
+  .modal__enter {
+    color: #ffffff;
+    background-color: #244c98;
+  }
+
+  .modal__register {
+    background-color: #ffffff;
+    color: #244c98;
+  }
+}
